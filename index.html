@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Free Online Image Converter: Convert JPG, PNG, WEBP & More | Converter</title>
+    <meta name="description" content="Convert your images easily and quickly. Convert JPG to PNG, WEBP to JPG, and many other formats, all free, secure & directly in your browser.">
+    <meta name="keywords" content="image converter, jpg to png, webp to jpg, online image converter, free, jpeg converter, png converter, webp converter, convert photo">
+    <link rel="canonical" href="https://{{DOMAIN}}/image-converter">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebTool",
+      "name": "Free Online Image Converter",
+      "description": "Convert your image formats like PNG to JPG, WEBP to PNG, and more online and for free.",
+      "operatingSystem": "Any",
+      "applicationCategory": "Multimedia",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://{{DOMAIN}}/image-converter"
+    }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav">
+        <a href="/" class="logo">Converter</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content container">
+      <div id="converter-wrapper">
+        <div id="initial-view">
+            <h1 id="dynamic-main-title">Free Online Image Converter</h1>
+            <p>Convert your image files online & free</p>
+            <div class="converter-interface">
+                <div class="file-input-section">
+                    <label for="file-input" class="choose-files-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                        Choose Files
+                    </label>
+                    <input type="file" id="file-input" multiple accept="image/*">
+                </div>
+                <p class="file-size-info">Drop files here. 100 MB maximum file size.</p>
+                <div class="format-conversion-section">
+                    <div class="format-dropdown-wrapper">
+                        <select id="input-format-select" class="format-select">
+                            <option value="any">ANY</option>
+                            <option value="image/jpeg">JPG</option>
+                            <option value="image/png">PNG</option>
+                            <option value="image/webp">WEBP</option>
+                            <option value="image/gif">GIF</option>
+                            <option value="image/bmp">BMP</option>
+                            <option value="image/tiff">TIFF</option>
+                            <option value="image/x-icon">ICO</option>
+                            <option value="image/svg+xml">SVG</option>
+                            <option value="image/heic">HEIC</option>
+                            <option value="image/avif">AVIF</option>
+                        </select>
+                    </div>
+                    <span class="conversion-separator">to</span>
+                    <div class="format-dropdown-wrapper">
+                        <select id="output-format-select" class="format-select">
+                            <option value="image/webp">WEBP</option>
+                            <option value="image/jpeg">JPG</option>
+                            <option value="image/png">PNG</option>
+                            <option value="image/gif">GIF</option>
+                            <option value="image/bmp">BMP</option>
+                            <option value="image/tiff">TIFF</option>
+                            <option value="image/x-icon">ICO</option>
+                            <option value="image/svg+xml">SVG</option>
+                            <option value="image/heic">HEIC</option>
+                            <option value="image/avif">AVIF</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="file-list-view" class="hidden">
+            <div id="file-list-container" class="file-list-container">
+            </div>
+            <div class="action-bar">
+                <label for="add-more-files-input" class="add-more-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add more files
+                </label>
+                <input type="file" id="add-more-files-input" multiple accept="image/*">
+                <button id="convert-all-btn" class="convert-all-button">
+                    Convert
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </div>
+        </div>
+      </div>
+
+      <section class="content-section">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step-card">
+                <h3>1. Upload Your Images</h3>
+                <p>Click the upload area or drag and drop multiple images. Our tool supports a wide range of formats.</p>
+            </div>
+            <div class="step-card">
+                <h3>2. Set Your Options</h3>
+                <p>Choose the target format for each file and adjust quality settings for formats like JPG and WEBP.</p>
+            </div>
+            <div class="step-card">
+                <h3>3. Convert & Download</h3>
+                <p>Click "Convert" and the tool will process all your images. Download them individually when ready.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+          <h2>Frequently Asked Questions (FAQ)</h2>
+          <div class="faq-container">
+              <details class="faq-item">
+                  <summary>Is this image converter free to use?</summary>
+                  <p>Yes, our online image converter is completely free for all users. There are no hidden charges or subscription fees.</p>
+              </details>
+              <details class="faq-item">
+                  <summary>Is my data secure? Are my images uploaded to a server?</summary>
+                  <p>Your privacy is our top priority. All image processing happens directly in your browser on your computer. Your files are never uploaded to our servers, ensuring your data remains 100% private and secure.</p>
+              </details>
+              <details class="faq-item">
+                  <summary>What is the difference between JPG, PNG, and WEBP?</summary>
+                  <p><strong>JPG (JPEG)</strong> is a lossy format, great for photographs and complex images where a smaller file size is important. <strong>PNG</strong> is a lossless format that supports transparency, making it ideal for logos and graphics with sharp lines. <strong>WEBP</strong> is a modern format developed by Google that offers both lossy and lossless compression, often providing smaller file sizes than both JPG and PNG at comparable quality.</p>
+              </details>
+              <details class="faq-item">
+                  <summary>What is the maximum file size I can upload?</summary>
+                  <p>You can upload files up to 100MB each. This allows for the conversion of high-resolution images without compromising on quality.</p>
+              </details>
+          </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Security First: Your Privacy Matters</h2>
+        <p>We believe in privacy. That's why our image converter is built to be completely secure. All file processing happens directly on your computer, in your browser. Your images are never uploaded to our servers, ensuring your data remains private and in your control at all times.</p>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p>&copy;2025 Converter. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+    </footer>
+
+    <template id="file-item-template">
+        <div class="file-item">
+            <div class="file-info">
+                <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span class="file-name" data-file-name></span>
+            </div>
+            <div class="file-actions">
+                <span>to</span>
+                <div class="format-dropdown-wrapper">
+                    <select class="format-select" data-format-select>
+                        <option value="image/webp">WEBP</option>
+                        <option value="image/jpeg">JPG</option>
+                        <option value="image/png">PNG</option>
+                        <option value="image/gif">GIF</option>
+                        <option value="image/bmp">BMP</option>
+                    </select>
+                </div>
+                <div class="status-container" data-status-container>
+                    <span class="file-status ready" data-file-status>READY</span>
+                    <div class="progress-bar-container hidden" data-progress-bar-container>
+                        <div class="progress-bar" data-progress-bar></div>
+                    </div>
+                    <div class="download-container hidden" data-download-container></div>
+                </div>
+                <span class="file-size" data-file-size></span>
+                <button class="remove-btn" data-remove-btn>&times;</button>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
